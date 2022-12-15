@@ -15,19 +15,18 @@
     </div>
 <div class="contaier">
     <div class="form">
-        <input type="text" placeholder="Enter Your Name" required>
-        <textarea name="" id="" cols="30" rows="10" required placeholder="Enter Your Feedback"></textarea>
+        <input  id="name" type="text" placeholder="Enter Your Name" required>
+        <textarea  id="review_text" type="text" cols="30" rows="10" required placeholder="Enter Your Feedback"></textarea>
         <div class="btn">
             <span>Rating :</span>
-            <button class="star"><i class="fa-regular fa-star"></i></button>
-            <button class="star"><i class="fa-regular fa-star"></i></button>
-            <button class="star"><i class="fa-regular fa-star"></i></button>
-            <button class="star"><i class="fa-regular fa-star"></i></button>
-            <button class="star"><i class="fa-regular fa-star"></i></button>
+            <button class="star">☆</button>
+            <button class="star">☆</button>
+            <button class="star">☆</button>
+            <button class="star">☆</button>
+            <button class="star">☆</i></button>
         </div>
-        <p class="current_rating" style="color: black;">0 of 5</p>
+        <p class="current_rating" style="color: white; font-weight: 800; font-size: 18px;">0 of 5</p>
         <button type="submit" class="submit" onclick="submitreview()">SUBMIT</button>
-
     </div>
 </div>
 <div class="previous">
@@ -44,13 +43,11 @@
     </div>
    </div>
     <div id="review_list">
-        <div class="box">
-            <div class="r-head">
-                <span id="name_list">Name</span>
-            <img src="./image/pngwing.com.png" alt="">
-            </div>
+        <!-- <div>
+            <p id="name_list">NAME</p>
+            <img src="./img/star_1.png">
             <p id="review_textarea">Review</p>
-        </div>
+        </div> -->
     </div>
 </div>
 

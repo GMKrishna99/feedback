@@ -14,7 +14,7 @@ body{
     margin-top: 30px;
     text-align: center;
     font-size: 20px;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .contaier{
 margin-top: 50px;
@@ -64,7 +64,7 @@ text-align: center;
     font-size: 16px;
     border: 1px solid transparent;
     outline: none;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border-radius: 10px;
     resize: none;
     background-color: rgba(255, 255, 255, 0.6);
@@ -77,17 +77,18 @@ text-align: center;
     font-size: 20px;
     margin-right: 5px;
 }
-.contaier .form .btn button{
+.contaier .form .btn button {
+    margin-top: -20px;
     background-color: transparent;
     border: none;
     outline: none;
-    font-size: 25px;
-    color: white;
-    margin-right: 10px;
-    margin-bottom: 30px;
+    margin: auto;
+    margin-bottom: 20px;
     cursor: pointer;
+    padding: 2px;
+    color: rgb(0, 0, 0);
+    font-size:32px;
 }
-
 .submit{
     margin-top: 20px;
     padding: 10px;
@@ -108,7 +109,7 @@ text-align: center;
     text-align: center;
 }
 .previous .head{
-    background-color: rgba(255, 255, 255, 0.856);
+    background-color: rgba(255, 255, 255, 0.603);
     margin: auto;
     width: 400px;
     padding: 10px;
@@ -131,29 +132,94 @@ text-align: center;
 .previous .con i{
     margin-right: 5px;
     font-size: 18px;
-    color:#ffbc27;
+    color:#000000;
 }
-#review_list{
-    width: 400px;
-    height: 150px;
-    border-radius: 10px;
-    margin: 20px;
-    padding: 20px;
-    display: flex;
+
+#review_list {
+    display:flex;
     flex-wrap: wrap;
-    background-color: rgba(255, 255, 255, 0.616);
-    margin-bottom: 20px;
 }
-#review_list p{
-    margin-top: 20px;
-    text-align: left;
-}
-#review_list .r-head{
-    display: flex;
-    width: 100%;
+#timedrpact
+{
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.493);
+    padding: 20px;
+    margin:50px;
+    box-sizing: border-box;
+    height:170px;
+    width:400px;
+    justify-content: center;
     align-items: center;
-    gap: 200px;
+    flex-wrap: wrap;
 }
-#review_list .r-head img{
-    width: 120px;
+#name_style
+{
+    font-size:16px;
+    text-transform:capitalize;  
+    width:180px;
+    font-weight: 800;
+
+}
+#timedrpact_inner
+{
+    height:60px;
+    display: flex;
+}
+
+ #timedrpact_inner  img{
+    height:26px;
+    width:146px;
+    padding-left: 50px;
+    margin-top: -10px;
+    /* object-fit: cover; */
+}
+@media (max-width:1199px){
+    #review_list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #timedrpact{
+        margin: 20px;
+    }
+}
+@media (max-width:799px){
+    .heading h1{
+        font-size: 32px;
+    }
+    .contaier .form {
+        margin-top: 20px;
+        width: 450px;
+        height: 500px;
+        background: rgba(255, 255, 255, .10);
+        padding: 50px;
+        border-radius: 10px;
+        position: relative;
+    }
+}
+@media (max-width:600px){
+    .heading h1{
+        font-size: 28px;
+    }
+    .contaier .form {
+        margin-top: 20px;
+        width: 400px;
+        height: 500px;
+        background: rgba(255, 255, 255, .10);
+        padding: 50px;
+        border-radius: 10px;
+        position: relative;
+    }
+    .contaier .form input {
+        width: 350px;
+    }
+    .contaier .form textarea {
+        width: 350px;
+    }
+    .previous .head {
+        width: 380px;
+        margin-bottom: 20px;
+       
+    }
 }

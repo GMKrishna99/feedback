@@ -6,7 +6,7 @@ var typed = new Typed(".type" ,{
     loop:true
 })
 // type effect start
-const allstar = document.querySelectorAll(".star");script.js
+const allstar = document.querySelectorAll(".star");
 let current_star_level = document.querySelector('.current_rating');
 var current_star_level_value;
 
@@ -39,7 +39,7 @@ function submitreview()
       return;
   }
 
-  fetch('https://learning-firebase-201d3-default-rtdb.asia-southeast1.firebasedatabase.app/asw.json',
+  fetch('https://my-frist-project-bebbb-default-rtdb.asia-southeast1.firebasedatabase.app/mohan.json',
   {
       method:'POST',
       headers:{
@@ -65,7 +65,7 @@ function submitreview()
     var output = document.getElementById('review_list');
     var i=1;
     var val=0;
-    fetch("https://learning-firebase-201d3-default-rtdb.asia-southeast1.firebasedatabase.app/asw.json").then(res=>res.json())
+    fetch("https://my-frist-project-bebbb-default-rtdb.asia-southeast1.firebasedatabase.app/mohan.json").then(res=>res.json())
 .then(data=>{
     for(let d in data)
     {
@@ -79,7 +79,7 @@ function submitreview()
             ele1.setAttribute("class","inner_p");
 
            var star_r=document.createElement("img");
-           star_r.src="./img/star_"+data[d].rating+".png";
+           star_r.src="./image/star"+data[d].rating+".png";
            var name_review=document.createElement("p");
            name_review.setAttribute("id","name_style");
            name_review.innerHTML=data[d].name;
