@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedBack</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/fav.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/7b39153ed3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="heading">
+        <h1> <span class="type"></span></h1>
+    </div>
+<div class="contaier">
+    <div class="form">
+        <input type="text" placeholder="Enter Your Name" required>
+        <textarea name="" id="" cols="30" rows="10" required placeholder="Enter Your Feedback"></textarea>
+        <div class="btn">
+            <span>Rating :</span>
+            <button class="star"><i class="fa-regular fa-star"></i></button>
+            <button class="star"><i class="fa-regular fa-star"></i></button>
+            <button class="star"><i class="fa-regular fa-star"></i></button>
+            <button class="star"><i class="fa-regular fa-star"></i></button>
+            <button class="star"><i class="fa-regular fa-star"></i></button>
+        </div>
+        <p class="current_rating" style="color: black;">0 of 5</p>
+        <button type="submit" class="submit" onclick="submitreview()">SUBMIT</button>
+
+    </div>
+</div>
+<div class="previous">
+   <div class="head">
+    <span>Previous reviews</span>
+    <div class="con">
+        <span>Average Rating :</span>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half-stroke"></i>
+       
+    </div>
+   </div>
+    <div id="review_list">
+        <div class="box">
+            <div class="r-head">
+                <span id="name_list">Name</span>
+            <img src="./image/pngwing.com.png" alt="">
+            </div>
+            <p id="review_textarea">Review</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
