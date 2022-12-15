@@ -26,7 +26,7 @@ text-align: center;
 .contaier .form{
     margin-top: 20px;
     width: 450px;
-    height: 500px;
+    height: 550px;
     background: rgba(255, 255, 255, .10);
     padding: 50px;
     border-radius: 10px;
@@ -100,9 +100,19 @@ text-align: center;
     letter-spacing: 3px;
     cursor: pointer;
     border-radius: 10px;
+    margin-bottom: 30px;
 }
 .submit:hover{
     background-color: #8280df;
+}
+p.hidden{
+    font-size: 18px;
+    color: #4caf50;
+    font-weight: 800;
+    background-color: white;
+    padding: 2px;
+    border-radius: 30px;
+    display: none;
 }
 .previous{
     margin-top: 50px;

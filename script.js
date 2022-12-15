@@ -32,7 +32,7 @@ function submitreview()
   let review_text=document.getElementById("review_text").value;
   let rating=current_star_level_value;
   console.log(rating);
-  
+  document.getElementById('hidden').style.display='block';
   if(name=="" ||review_text=="" ||isNaN(rating))    
   {
       alert("Please fill all the fields")
@@ -55,7 +55,6 @@ function submitreview()
   document.getElementById("name").value="";
   document.getElementById("review_text").value="";
   document.getElementsByClassName("current_rating").value="";
-  alert("Thank you for your valuable review");
 
   
 
