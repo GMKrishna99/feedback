@@ -192,7 +192,9 @@ p.hidden{
     }
     #timedrpact{
         margin: 20px;
-    }
+    p.hidden{
+display:none;
+}
 }
 @media (max-width:799px){
     .heading h1{
@@ -207,6 +209,9 @@ p.hidden{
         border-radius: 10px;
         position: relative;
     }
+    p.hidden{
+display:none;
+}
 }
 @media (max-width:600px){
     .heading h1{
@@ -232,4 +237,7 @@ p.hidden{
         margin-bottom: 20px;
        
     }
+    p.hidden{
+display:none;
+}
 }
