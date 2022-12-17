@@ -157,7 +157,7 @@ p.hidden{
     padding: 20px;
     margin:50px;
     box-sizing: border-box;
-    height:170px;
+    height:auto;
     width:400px;
     justify-content: center;
     align-items: center;
