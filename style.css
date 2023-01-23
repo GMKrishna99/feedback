@@ -26,7 +26,7 @@ text-align: center;
 .contaier .form{
     margin-top: 20px;
     width: 450px;
-    height: 550px;
+    height: 400px;
     background: rgba(255, 255, 255, .10);
     padding: 50px;
     border-radius: 10px;
@@ -59,7 +59,7 @@ text-align: center;
 }
 .contaier .form textarea{
     width: 370px;
-    height: 200px;
+    height: 100px;
     padding: 10px;
     font-size: 16px;
     border: 1px solid transparent;
@@ -105,15 +105,7 @@ text-align: center;
 .submit:hover{
     background-color: #8280df;
 }
-p.hidden{
-    font-size: 18px;
-    color: #4caf50;
-    font-weight: 800;
-    background-color: white;
-    padding: 2px;
-    border-radius: 30px;
-    display: none;
-}
+
 .previous{
     margin-top: 50px;
     text-align: center;

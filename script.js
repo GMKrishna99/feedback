@@ -32,14 +32,13 @@ function submitreview()
   let review_text=document.getElementById("review_text").value;
   let rating=current_star_level_value;
   console.log(rating);
-  document.getElementById('hidden').style.display='block';
   if(name=="" ||review_text=="" ||isNaN(rating))    
   {
       alert("Please fill all the fields")
       return;
   }
 
-  fetch('https://my-frist-project-bebbb-default-rtdb.asia-southeast1.firebasedatabase.app/mohan.json',
+  fetch('https://react-app-37960-default-rtdb.asia-southeast1.firebasedatabase.app/mohan.json',
   {
       method:'POST',
       headers:{
@@ -64,7 +63,7 @@ function submitreview()
     var output = document.getElementById('review_list');
     var i=1;
     var val=0;
-    fetch("https://my-frist-project-bebbb-default-rtdb.asia-southeast1.firebasedatabase.app/mohan.json").then(res=>res.json())
+    fetch("https://react-app-37960-default-rtdb.asia-southeast1.firebasedatabase.app/mohan.json").then(res=>res.json())
 .then(data=>{
     for(let d in data)
     {
